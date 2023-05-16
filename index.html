@@ -248,7 +248,7 @@
     </div>
 
     <div id="screen">
-        <p style="color: white; font-size: 20px; transition: 0.6s ease-out;" id="ivestiKelionesKoda">Įvesti kelionės kodą</p>
+        <p style="color: white; font-size: 20px; transition: 0.6s ease-out;" id="ivestiKelionesKoda">Įvesk kelionės kodą</p>
         <form>
             <div id="keypad">
                 <form style="width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
@@ -290,10 +290,11 @@
     <div id="information">
         <div style="position: absolute; width: 5px; height: 5px; top: 0; left: 0;" id="topInfo"></div>
         <div id="info"><i class="fa-solid fa-chevron-down" style="font-size: 25px; position: absolute; left: 25px; z-index: 4; transition: 0.15s;" onclick="closeKelione()" id="chevron"></i><i class="fa-solid fa-ellipsis" style="font-size: 25px; position: absolute; right: 25px; transition: 0.15s;" onclick="menuOpen()" id="ellipsis"></i></div>
-        <div style="width: 75px; height: 30px; background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; display: flex; justify-content: center; align-items: center; position: absolute; top: 50px; left: 0; opacity: 0;" id="uzdaryti">Uždaryti</div>
-        <div style="width: 75px; height: 30px; background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; display: flex; justify-content: center; align-items: center; position: absolute; top: 50px; right: 0; opacity: 0;" id="daugiau">Daugiau</div>
+        <div style="width: 75px; height: 30px; background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; display: flex; justify-content: center; align-items: center; position: absolute; top: 50px; left: 0; opacity: 0; z-index: 5;" id="uzdaryti">Uždaryti</div>
+        <div style="width: 75px; height: 30px; background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; display: flex; justify-content: center; align-items: center; position: absolute; top: 50px; right: 0; opacity: 0; z-index: 5;" id="daugiau">Daugiau</div>
         <div style="width: 100%; height: 100%; position: fixed; top: 60px; padding-bottom: 60px; display: flex; justify-content: center; align-items: center; left: 0; right: 0; background-color: transparent; z-index: 3; display: none;" id="closeButtons" onclick="closeButtons()"></div>
-        <div style="width: 100%; height: 30px; position: fixed; left: 0; right: 0; bottom: 30px; display: none; justify-content: center; align-items: center; opacity: 0;" id="pabaigimaiAtsaukti"><div style="background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; width: 180px; height: 30px; display: flex; justify-content: center; align-items: center;"><i class="fa-solid fa-check" style="margin-right: 5px;"></i> Pabaigimai atšaukti</div></div>
+        <div style="width: 100%; height: 30px; position: fixed; left: 0; right: 0; bottom: 30px; display: none; justify-content: center; align-items: center; opacity: 0; z-index: 5;" id="pabaigimaiAtsaukti"><div style="background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; width: 170px; height: 30px; display: flex; justify-content: center; align-items: center;"><i class="fa-regular fa-square-minus" style="margin-right: 5px;"></i>Pabaigimai atšaukti</div></div>
+        <div style="width: 100%; height: 30px; position: fixed; left: 0; right: 0; bottom: 30px; display: none; justify-content: center; align-items: center; opacity: 0; z-index: 5;" id="atidaromaNavigacija"><div style="background-color: darkgrey; font-size: 13px; color: white; border-radius: 5px; width: 185px; height: 30px; display: flex; justify-content: center; align-items: center;"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Atidaroma navigacija...</div></div>
         <div style="width: 0; height: 0; background-color: #f2f2f2; position: absolute; top: 50px; right: 15px; z-index: 7; box-shadow: 0 0 50px lightgrey; border-radius: 5px; opacity: 0;" id="extraMenu">
             <button style="width: 100%; height: 42px; background-color: transparent; color: black; border: none; font-size: 17px;" onclick="showIns()"><i class="fa-regular fa-eye"></i> Peržiūrėti instrukciją</button>
             <div style="width: 100%; height: 1px; padding-left: 15px; padding-right: 15px; position: absolute;"><hr></div>
@@ -303,7 +304,7 @@
         <div id="instruction" style="width: 100%; height: 100%; position: fixed; display: flex; justify-content: center; align-items: center; top: 0; left: 0; right: 0; background-color: transparent; opacity: 1; z-index: 6; color: white;">
             <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;" id="ins1">
                 <p style="font-size: 30px; text-align: center; margin-bottom: 20px; padding-left: 5px; padding-right: 5px;">Instrukcija</p>
-                <p style="font-size: 17px; text-align: center; padding-left: 5px; padding-right: 5px;">Susipažinkite su puslapio valdymu</p>
+                <p style="font-size: 17px; text-align: center; padding-left: 5px; padding-right: 5px;">Susipažink su puslapio valdymu</p>
                 <button style="width: 80px; height: 30px; background-color: transparent; border: 2px solid white; color: white; border-radius: 5px; position: absolute; bottom: 50px;" onclick="instruction1()">Pradėti</button>
             </div>
             <div style="width: 100%; height: 100%; display: none; justify-content: center; align-items: center; flex-direction: column; opacity: 0;" id="ins2">
@@ -357,7 +358,7 @@
             </div>
             <div style="width: 100%; height: 100%; display: none; justify-content: center; align-items: center; flex-direction: column; opacity: 0;" id="ins5">
                 <p style="font-size: 30px; text-align: center; margin-bottom: 20px; padding-left: 5px; padding-right: 5px;">Instrukcija baigta</p>
-                <p style="font-size: 17px; text-align: center; padding-left: 5px; padding-right: 5px;">Ją dar kartą peržiūrėti galima <i class="fa-solid fa-ellipsis"></i></p>
+                <p style="font-size: 17px; text-align: center; padding-left: 5px; padding-right: 5px;">Ją dar kartą peržiūrėti gali <i class="fa-solid fa-ellipsis"></i></p>
                 <button style="width: 80px; height: 30px; background-color: transparent; border: 2px solid white; color: white; border-radius: 5px; position: absolute; bottom: 50px;" onclick="instruction5()">Baigti</button>
             </div>
         </div>
@@ -450,12 +451,12 @@
             <div class="eiti" id="ejimas1">
                 <p style="position: absolute; top: 5px; left: 15px; font-size: 15px; width: 30px; height: 30px; background-color: darkgrey; color: white; border-radius: 5px; display: flex; justify-content: space-around; align-items: center;"><i class="fa-solid fa-person-walking"></i></p>
                 <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 130px;"><i class="fa-regular fa-building"></i> Kaunas</p>
-                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">21 min</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">27 min</p>
             </div>
             <div class="arrive" id="atvykimas1">
                 <i class="fa-solid fa-arrow-turn-up" style="font-size: 20px; position: absolute; top: 2px; left: 30px; transform: rotate(90deg);"></i>
-                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Kauno paveikslų galerija</p>
-                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">13:10</p>
+                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Žaliakalnio funikulieriaus žemutinė stotis</p>
+                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">13:16</p>
             </div>
             <button onclick="navigate1()" id="navigate1" style="width: 15%; height: 72px; border: none; background-color: white; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -15%; z-index: 4;"><img src="maps.png" alt="Navigate with Google Maps" style="width: 40px; margin-top: 5px;"></button>
             <button onclick="checking1()" id="checking1" style="width: 15%; height: 72px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -30%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
@@ -464,7 +465,7 @@
 
         <div style="width: 100%; height: auto;">
             <div class="visit" id="visit1">
-                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankymasis 1 h</p>
+                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankytis 5 min</p>
             </div>
             <button onclick="checking2()" id="checking2" style="width: 15%; height: 42px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -42px; right: -15%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
         </div>
@@ -473,13 +474,13 @@
         <div style="width: 100%; height: auto;">
             <div class="eiti" id="ejimas2">
                 <p style="position: absolute; top: 5px; left: 15px; font-size: 15px; width: 30px; height: 30px; background-color: darkgrey; color: white; border-radius: 5px; display: flex; justify-content: space-around; align-items: center;"><i class="fa-solid fa-person-walking"></i></p>
-                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 125px;">Kauno paveikslų galerija</p>
-                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">9 min</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 125px;">Žaliakalnio funikulieriaus viršutinė stotis</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">2 min</p>
             </div>
             <div class="arrive" id="atvykimas2">
                 <i class="fa-solid fa-arrow-turn-up" style="font-size: 20px; position: absolute; top: 2px; left: 30px; transform: rotate(90deg);"></i>
-                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Žaliakalnio funikulieriaus viršutinė stotis</p>
-                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">14:19</p>
+                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Kristaus prisikėlimo bazilika</p>
+                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">13:23</p>
             </div>
             <button onclick="navigate2()" id="navigate2" style="width: 15%; height: 72px; border: none; background-color: white; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -15%; z-index: 4;"><img src="maps.png" alt="Navigate with Google Maps" style="width: 40px; margin-top: 5px;"></button>
             <button onclick="checking3()" id="checking3" style="width: 15%; height: 72px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -30%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
@@ -488,7 +489,7 @@
 
         <div style="width: 100%; height: auto;">
             <div class="visit" id="visit2">
-                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankymasis 5 min</p>
+                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankytis 15 min</p>
             </div>
             <button onclick="checking4()" id="checking4" style="width: 15%; height: 42px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -42px; right: -15%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
         </div>
@@ -497,13 +498,13 @@
         <div style="width: 100%; height: auto;">
             <div class="eiti" id="ejimas3">
                 <p style="position: absolute; top: 5px; left: 15px; font-size: 15px; width: 30px; height: 30px; background-color: darkgrey; color: white; border-radius: 5px; display: flex; justify-content: space-around; align-items: center;"><i class="fa-solid fa-person-walking"></i></p>
-                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 125px;">Žaliakalnio funikulieriaus viršutinė stotis</p>
-                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">2 min</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 125px;">Kristaus prisikėlimo bazilika</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">8 min</p>
             </div>
             <div class="arrive" id="atvykimas3">
                 <i class="fa-solid fa-arrow-turn-up" style="font-size: 20px; position: absolute; top: 2px; left: 30px; transform: rotate(90deg);"></i>
-                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Kristaus prisikėlimo bazilika</p>
-                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">14:26</p>
+                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Nacionalinis M. K. Čiurlionio dailės muziejus</p>
+                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">13:46</p>
             </div>
             <button onclick="navigate3()" id="navigate3" style="width: 15%; height: 72px; border: none; background-color: white; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -15%; z-index: 4;"><img src="maps.png" alt="Navigate with Google Maps" style="width: 40px; margin-top: 5px;"></button>
             <button onclick="checking5()" id="checking5" style="width: 15%; height: 72px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -30%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
@@ -512,7 +513,7 @@
 
         <div style="width: 100%; height: auto;">
             <div class="visit" id="visit3">
-                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankymasis 15 min</p>
+                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankytis 1 h</p>
             </div>
             <button onclick="checking6()" id="checking6" style="width: 15%; height: 42px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -42px; right: -15%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
         </div>
@@ -521,13 +522,13 @@
         <div style="width: 100%; height: auto;">
             <div class="eiti" id="ejimas4">
                 <p style="position: absolute; top: 5px; left: 15px; font-size: 15px; width: 30px; height: 30px; background-color: darkgrey; color: white; border-radius: 5px; display: flex; justify-content: space-around; align-items: center;"><i class="fa-solid fa-person-walking"></i></p>
-                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 130px;">Kristaus prisikėlimo bazilika</p>
-                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">10 min</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 130px;">Nacionalinis M. K. Čiurlionio dailės muziejus</p>
+                <p style="font-size: 17px; position: absolute; top: 10px; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">4 min</p>
             </div>
             <div class="arrive" id="atvykimas4">
                 <i class="fa-solid fa-arrow-turn-up" style="font-size: 20px; position: absolute; top: 2px; left: 30px; transform: rotate(90deg);"></i>
                 <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Laisvės alėja</p>
-                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">14:51</p>
+                <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">14:50</p>
             </div>
             <button onclick="navigate4()" id="navigate4" style="width: 15%; height: 72px; border: none; background-color: white; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -15%; z-index: 4;"><img src="maps.png" alt="Navigate with Google Maps" style="width: 40px; margin-top: 5px;"></button>
             <button onclick="checking7()" id="checking7" style="width: 15%; height: 72px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -30%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
@@ -536,7 +537,7 @@
 
         <div style="width: 100%; height: auto;">
             <div class="visit" id="visit4">
-                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankymasis 1 h 38 min</p>
+                <p style="font-size: 15px; position: absolute; left: 20px;"><i class="fa-solid fa-landmark" style="font-size: 17px; margin-right: 4px;"></i> Lankytis 1 h 39 min</p>
             </div>
             <button onclick="checking8()" id="checking8" style="width: 15%; height: 42px; border: none; background-color: green; color: white; font-size: 25px; position: absolute; margin-top: -42px; right: -15%; z-index: 4;"><i class="fa-solid fa-check"></i></button>
         </div>
@@ -550,7 +551,7 @@
             </div>
             <div class="arrive" id="atvykimas5">
                 <i class="fa-solid fa-arrow-turn-up" style="font-size: 20px; position: absolute; top: 2px; left: 30px; transform: rotate(90deg);"></i>
-                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;"><i class="fa-regular fa-building"></i> Kaunas</p>
+                <p style="font-size: 17px; position: absolute; top: 0; left: 55px; overflow: hidden; white-space: nowrap; display: inline-block; text-overflow: ellipsis; width: 100%; padding-right: 120px;">Kauno geležinkelio stotis</p>
                 <p style="font-size: 17px; position: absolute; top: 0; right: 15px; font-weight: 500; background-color: #f2f2f2; box-shadow: 0 0 15px #f2f2f2; padding-left: 3px;">16:50</p>
             </div>
             <button onclick="navigate5()" id="navigate5" style="width: 15%; height: 72px; border: none; background-color: white; color: white; font-size: 25px; position: absolute; margin-top: -72px; right: -15%; z-index: 4;"><img src="maps.png" alt="Navigate with Google Maps" style="width: 40px; margin-top: 5px;"></button>
@@ -772,7 +773,7 @@
         }
         function check(form)
         {
-                if(form.pin.value == "000000")
+                if(form.pin.value == "432108")
                 {
                     document.cookie = "user=adminas";
                 document.getElementById("loading").style.display = "flex";
@@ -1009,6 +1010,7 @@
             }, 300);
         }
         function deleteCompletes() {
+            document.getElementById("closeButtons").style.display = "none";
             document.getElementById("extraMenu").style.opacity = "0";
             document.getElementById("pabaigimaiAtsaukti").style.display = "flex";
             document.getElementById("bus1").style.opacity = "1";
@@ -1042,6 +1044,69 @@
             document.getElementById("atvykimukas3").style.opacity = "1";
             document.getElementById("ejimukas1").style.opacity = "1";
             document.getElementById("laukimukas1").style.opacity = "1";
+            document.getElementById("bus1").style.opacity = "1";
+            document.getElementById("bus2").style.opacity = "1";
+            document.getElementById("train1").style.opacity = "1";
+            document.getElementById("arrive1").style.opacity = "1";
+            document.getElementById("arrive2").style.opacity = "1";
+            document.getElementById("arrive3").style.opacity = "1";
+            document.getElementById("arrive4").style.opacity = "1";
+            document.getElementById("wait1").style.opacity = "1";
+            document.getElementById("wait2").style.opacity = "1";
+            document.getElementById("eiti1").style.opacity = "1";
+            document.getElementById("ejimas1").style.opacity = "1";
+            document.getElementById("ejimas2").style.opacity = "1";
+            document.getElementById("ejimas3").style.opacity = "1";
+            document.getElementById("ejimas4").style.opacity = "1";
+            document.getElementById("ejimas5").style.opacity = "1";
+            document.getElementById("atvykimas1").style.opacity = "1";
+            document.getElementById("atvykimas2").style.opacity = "1";
+            document.getElementById("atvykimas3").style.opacity = "1";
+            document.getElementById("atvykimas4").style.opacity = "1";
+            document.getElementById("atvykimas5").style.opacity = "1";
+            document.getElementById("visit1").style.opacity = "1";
+            document.getElementById("visit2").style.opacity = "1";
+            document.getElementById("visit3").style.opacity = "1";
+            document.getElementById("visit4").style.opacity = "1";
+            document.getElementById("traukinukas1").style.opacity = "1";
+            document.getElementById("traukinukas2").style.opacity = "1";
+            document.getElementById("atvykimukas1").style.opacity = "1";
+            document.getElementById("atvykimukas2").style.opacity = "1";
+            document.getElementById("atvykimukas3").style.opacity = "1";
+            document.getElementById("ejimukas1").style.opacity = "1";
+            document.getElementById("laukimukas1").style.opacity = "1";
+
+            document.getElementById("bus1").style.pointerEvents = "all";
+            document.getElementById("bus2").style.pointerEvents = "all";
+            document.getElementById("train1").style.pointerEvents = "all";
+            document.getElementById("arrive1").style.pointerEvents = "all";
+            document.getElementById("arrive2").style.pointerEvents = "all";
+            document.getElementById("arrive3").style.pointerEvents = "all";
+            document.getElementById("arrive4").style.pointerEvents = "all";
+            document.getElementById("wait1").style.pointerEvents = "all";
+            document.getElementById("wait2").style.pointerEvents = "all";
+            document.getElementById("eiti1").style.pointerEvents = "all";
+            document.getElementById("ejimas1").style.pointerEvents = "all";
+            document.getElementById("ejimas2").style.pointerEvents = "all";
+            document.getElementById("ejimas3").style.pointerEvents = "all";
+            document.getElementById("ejimas4").style.pointerEvents = "all";
+            document.getElementById("ejimas5").style.pointerEvents = "all";
+            document.getElementById("atvykimas1").style.pointerEvents = "all";
+            document.getElementById("atvykimas2").style.pointerEvents = "all";
+            document.getElementById("atvykimas3").style.pointerEvents = "all";
+            document.getElementById("atvykimas4").style.pointerEvents = "all";
+            document.getElementById("atvykimas5").style.pointerEvents = "all";
+            document.getElementById("visit1").style.pointerEvents = "all";
+            document.getElementById("visit2").style.pointerEvents = "all";
+            document.getElementById("visit3").style.pointerEvents = "all";
+            document.getElementById("visit4").style.pointerEvents = "all";
+            document.getElementById("traukinukas1").style.pointerEvents = "all";
+            document.getElementById("traukinukas2").style.pointerEvents = "all";
+            document.getElementById("atvykimukas1").style.pointerEvents = "all";
+            document.getElementById("atvykimukas2").style.pointerEvents = "all";
+            document.getElementById("atvykimukas3").style.pointerEvents = "all";
+            document.getElementById("ejimukas1").style.pointerEvents = "all";
+            document.getElementById("laukimukas1").style.pointerEvents = "all";
             document.cookie = "vaziavimas-1=; expires=Sat, 01 Jan 2000 00:00:00 UTC";
             document.cookie = "vaziavimas-2=; expires=Sat, 01 Jan 2000 00:00:00 UTC";
             document.cookie = "vaziavimas-3=; expires=Sat, 01 Jan 2000 00:00:00 UTC";
@@ -1075,6 +1140,8 @@
         }
 
         function menuOpen() {
+            document.getElementById("uzdaryti").style.opacity = "0";
+            document.getElementById("daugiau").style.opacity = "0";
             document.getElementById("ellipsis").style.opacity = "0.5";
             document.getElementById("closeButtons").style.display = "block";
             setTimeout(() => {
@@ -1543,6 +1610,16 @@
             }
         }
         function navigation1() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("eiti1").style.marginLeft = "0";
             document.getElementById("arrive3").style.marginLeft = "0";
             document.getElementById("check4").style.right = "-30%";
@@ -1636,12 +1713,22 @@
             }
         }
         function navigate1() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimas1").style.marginLeft = "0";
             document.getElementById("atvykimas1").style.marginLeft = "0";
             document.getElementById("checking1").style.right = "-30%";
             document.getElementById("navigate1").style.right = "-15%";
             document.getElementById("closeButtons").style.display = "none";
-            window.open('https://maps.app.goo.gl/zy97nrHuJ9DDKz2x9');
+            window.open('https://maps.app.goo.gl/qm5Jqhszdr5ZKPeP9');
         }
         function checking2() {
             document.cookie = "lankymasis-2=complete";
@@ -1696,12 +1783,22 @@
             }
         }
         function navigate2() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimas2").style.marginLeft = "0";
             document.getElementById("atvykimas2").style.marginLeft = "0";
             document.getElementById("checking3").style.right = "-30%";
             document.getElementById("navigate2").style.right = "-15%";
             document.getElementById("closeButtons").style.display = "none";
-            window.open('https://maps.app.goo.gl/YkTDsMhu1FaeodyQ8');
+            window.open('https://maps.app.goo.gl/Vx3Hqf3EG73QYWR48');
         }
         function checking4() {
             document.cookie = "lankymasis-4=complete";
@@ -1756,12 +1853,22 @@
             }
         }
         function navigate3() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimas3").style.marginLeft = "0";
             document.getElementById("atvykimas3").style.marginLeft = "0";
             document.getElementById("checking5").style.right = "-30%";
             document.getElementById("navigate3").style.right = "-15%";
             document.getElementById("closeButtons").style.display = "none";
-            window.open('https://maps.app.goo.gl/S2tJ62cXtiRyCuSa6');
+            window.open('https://maps.app.goo.gl/K27bhTFBWJuAzHs56');
         }
         function checking6() {
             document.cookie = "lankymasis-6=complete";
@@ -1816,12 +1923,22 @@
             }
         }
         function navigate4() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimas4").style.marginLeft = "0";
             document.getElementById("atvykimas4").style.marginLeft = "0";
             document.getElementById("checking7").style.right = "-30%";
             document.getElementById("navigate4").style.right = "-15%";
             document.getElementById("closeButtons").style.display = "none";
-            window.open('https://maps.app.goo.gl/G3M4dqgD61jV6NJS9');
+            window.open('https://maps.app.goo.gl/v7D9cEgdMgWPdydV9');
         }
         function checking8() {
             document.cookie = "lankymasis-8=complete";
@@ -1876,12 +1993,22 @@
             }
         }
         function navigate5() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimas5").style.marginLeft = "0";
             document.getElementById("atvykimas5").style.marginLeft = "0";
             document.getElementById("checking9").style.right = "-30%";
             document.getElementById("navigate5").style.right = "-15%";
             document.getElementById("closeButtons").style.display = "none";
-            window.open('https://maps.app.goo.gl/5skpuQ1YKuTkGvKn7');
+            window.open('https://maps.app.goo.gl/BQgjfamnTKYBfnoG7');
         }
 
 
@@ -1948,6 +2075,16 @@
             }
         }
         function navigacijukas1() {
+            document.getElementById("atidaromaNavigacija").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0.9";
+            }, 50);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.opacity = "0";
+            }, 3050);
+            setTimeout(() => {
+                document.getElementById("atidaromaNavigacija").style.display = "none";
+            }, 3350);
             document.getElementById("ejimukas1").style.marginLeft = "0";
             document.getElementById("atvykimukas2").style.marginLeft = "0";
             document.getElementById("pabaigtukas2").style.right = "-30%";
